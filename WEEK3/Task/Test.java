@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         Member donny = new Member("111333444", "Donny", 5000000);
 
         System.out.println("Member name: " + donny.getName());
@@ -15,7 +15,7 @@ public class Test {
         float borrowAmount = sc.nextFloat();
         donny.borrow(borrowAmount);
 
-        System.out.print("\nEnter pay installments: ");
+        System.out.print("\nEnter installment payment: ");
         float installment = sc.nextFloat();
         donny.installments(installment);
         System.out.println("Current loan amount: " + donny.getLoanAmount());
