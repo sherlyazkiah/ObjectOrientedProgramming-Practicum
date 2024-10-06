@@ -1,8 +1,7 @@
-package assignment;
+package tugas;
 
 public class Main {
     public static void main(String[] args) {
-        // Create Dosen objects
         Dosen dosen1 = new Dosen("12345", "Dr. Budi", "Malang");
         dosen1.setSKS(12);
         

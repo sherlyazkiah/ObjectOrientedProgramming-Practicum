@@ -1,4 +1,4 @@
-package assignment;
+package tugas;
 
 public class Dosen extends Pegawai{
     private int jumlahSKS;

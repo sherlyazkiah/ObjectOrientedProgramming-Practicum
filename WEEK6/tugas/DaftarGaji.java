@@ -1,4 +1,4 @@
-package assignment;
+package tugas;
 
 public class DaftarGaji {
     private Pegawai[] listPegawai;
