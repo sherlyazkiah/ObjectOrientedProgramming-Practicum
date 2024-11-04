@@ -1,16 +1,12 @@
 package WEEK10.interfacetraining;
 
 public class Rector {
-    public void giveCumlaudeCertificate(ICumlaude student) {
-        System.out.println("I am a Rector, give a Cumlaude Certificate");
-        System.out.println("Congratulations! Please introduce yourself..");
+    public void giveCertificateOfTopStudent(IAchievers student) {
+        System.out.println("I am a Rector, give a Certificate of Top Student.");
+        System.out.println("Congratulations! How you can get achievement?");
 
-        if (student instanceof Student) {
-            ((Student) student).studyInCampus();
-        }
-        
-        student.graduate();
-        student.getHighGPA();
+        student.winTheCompetition();
+        student.publishTheJournal();
 
         System.out.println("--------------------------------------------");
     }

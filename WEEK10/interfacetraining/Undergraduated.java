@@ -1,12 +1,11 @@
 package WEEK10.interfacetraining;
 
-public class Undergraduated extends Student implements ICumlaude {
+public class Undergraduated extends Student implements ICumlaude, IAchievers {
     
     private String gpa;
 
-    public Undergraduated(String name, String gpa) {
+    public Undergraduated(String name) {
         super(name);
-        this.gpa = gpa;
     }
 
     @Override
@@ -16,6 +15,16 @@ public class Undergraduated extends Student implements ICumlaude {
 
     @Override
     public void getHighGPA() {
-        System.out.println("My GPA is " + this.gpa);
+        System.out.println("My GPA is more than 3,51");
+    }
+
+    @Override
+    public void winTheCompetition() {
+        System.out.println("I have won an INTERNATIONAL competition");
+    }
+
+    @Override
+    public void publishTheJournal() {
+        System.out.println("I publish articles in INTERNATIONAL journals");
     }
 }

@@ -1,6 +1,6 @@
 package WEEK10.interfacetraining;
 
-public class Postgraduated extends Student implements ICumlaude {
+public class Postgraduated extends Student implements ICumlaude, IAchievers {
     
     public Postgraduated(String name) {
         super(name);
@@ -14,5 +14,15 @@ public class Postgraduated extends Student implements ICumlaude {
     @Override
     public void getHighGPA() {
         System.out.println("My GPA is more than 3,71");
+    }
+
+    @Override
+    public void winTheCompetition() {
+        System.out.println("I have won an INTERNATIONAL competition");
+    }
+
+    @Override
+    public void publishTheJournal() {
+        System.out.println("I publish articles in INTERNATIONAL journals");
     }
 }
