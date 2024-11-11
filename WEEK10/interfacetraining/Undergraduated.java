@@ -1,8 +1,6 @@
 package WEEK10.interfacetraining;
 
 public class Undergraduated extends Student implements ICumlaude, IAchievers {
-    
-    private String gpa;
 
     public Undergraduated(String name) {
         super(name);
